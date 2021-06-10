@@ -122,7 +122,16 @@
 									Because of this, near the edge of the telecope's observing area,
 									we cannot unambiguously distinguish between E-modes and B-modes. This is where our filter comes in.
 									Our filter iteratively solves for the Wiener filter reconstruction of our data. That is, our filter
-									outputs the map which minimizes chi-squared, or equivalently, the error in our measurement. The code developed
+									outputs the map which minimizes chi-squared, or equivalently, the error in our measurement. You can see
+									a demonstration of this in the figure below. It shows that our filter resulted in a lower variance
+									(error bar size) when compared to the S2-hat estimator, which is currently used in the BICEP/Keck
+									analysis pipeline.
+								</p>
+								<div class="image main"><img src="images/variance_comparison.png" alt="" /></div>
+
+
+								<p style="font-family: Arial;font-size: 18px">
+									The code developed
 									for this project is open source and available on my GitHub account <a href="https://github.com/michaelray1/messenger_method">here</a>.
 									Also in that GitHub repository is a jupyter notebook which gives a demonstration of how the code works.
 									A logbook posting in the CMBS-4 collaboration which was authored by Dr. Bischoff and myself can be found
