@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PK159YWCL6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PK159YWCL6');
+    </script>
+		<title>Michael Ray</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Michael Ray</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li class="active"><a href="Research.html">Research</a></li>
+              <li><a href="Projects.html">Data Science Projects</a></li>
+							<li><a href="contact.html">Contact Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/michaelray1" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date"></span>
+								<p style="font-family: Arial; font-size: 18px">
+									<br>
+
+									</br>
+								</header>
+								</p>
+								<h2>Optimal Filtering of Early-Universe Light</h2>
+								<br>
+								</br>
+                <p style="font-family: Arial;font-size: 18px">
+                  Dr. Bischoff and I worked on developing a filter
+									for CMB data which was meant to provide a reconstructed map of the CMB in which we only keep
+									the divergence-free component of the light. These divergence-free components are called
+									B-modes and they contain information about the early universe. Of particular interest to Dr.
+									Bischoff's work is the fact that inflationary gravitational waves, if they existed in the early universe,
+									would leave an imprint on the CMB in the form of B-modes. Therefore, obtaining an estimate of the
+									B-mode signal is of importance for answering the question of whether inflation happened in our universe.
+								</p>
+
+                <p style="font-family: Arial;font-size: 18px">
+									Unfortunately for us, the B-mode signal in the CMB is very faint compared to the E-mode signal (this is the
+									curl-free component of the light).
+									In addition, when telescopes (such as the BICEP/Keck array at the South Pole) are connected to the Earth,
+									they only observe a portion of the sky. Measurements of polarized light are local measurements, though.
+									Because of this, near the edge of the telecope's observing area,
+									we cannot unambiguously distinguish between E-modes and B-modes. This is where our filter comes in.
+									Our filter iteratively solves for the Wiener filter reconstruction of our data. That is, our filter
+									outputs the map which minimizes chi-squared, or equivalently, the error in our measurement. You can see
+									a demonstration of this in the figure below. It shows that our filter resulted in a lower variance
+									(error bar size) when compared to the S2-hat estimator, which is currently used in the BICEP/Keck
+									analysis pipeline.
+								</p>
+                <div class="image main"><img src="images/variance_comparison.png" alt="" /></div>
+                <p style="font-family: Arial;font-size: 18px">
+                  The code developed
+                  for this project is open source and available on my GitHub account <a href="https://github.com/michaelray1/messenger_method">here</a>.
+                  Also in that GitHub repository is a jupyter notebook which gives a demonstration of how the code works.
+                  A logbook posting in the CMBS-4 collaboration which was authored by Dr. Bischoff and myself can be found
+                  <a href="https://cmb-s4.uchicago.edu/wiki/index.php/PureB_by_Messenger_Method">here</a>. A poster for this
+                  work can be seen below.
+                </p>
+                <div class="image main"><img src="assets/MM_poster.jpg" alt="" /></div>
+							</section>
+
+					</div>
+
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
